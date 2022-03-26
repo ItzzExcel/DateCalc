@@ -27,8 +27,9 @@ function AgeCalc()
 	)
 
 	{
-		var ErrorMessage = 'Not Born Yet'
+		var ErrorMessage = 'Not Born Yet / Esa fecha no ha transcurrido aún'
 		console.log(ErrorMessage);
+		alert (ErrorMessage)
 		DisplayResult("-", "-", "-");
 		return;
 	}
@@ -70,8 +71,6 @@ function DisplayResult(BDate, BMonth, BYear)
 	document.getElementById('Years').textContent = BYear;
 	document.getElementById('Months').textContent = BMonth;
 	document.getElementById('Days').textContent = BDate;
-	console.log(' ', BYear, '    ', BMonth, '    ', BDate);
-	console.log('Years, Months, Days');
 }
 
 function LeapChecker(Year) 
