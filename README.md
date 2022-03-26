@@ -1,4 +1,4 @@
 # AgeCalc
 
-** Welcome to AgeCalc Repository!
+* Welcome to AgeCalc Repository!
 
