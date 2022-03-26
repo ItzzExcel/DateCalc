@@ -130,6 +130,7 @@ span
 	transition: 0.2s;
 	font-size: 30px;
 	font-weight: 500;
+	pointer-events: none !important;
 }
 
 p
@@ -137,5 +138,5 @@ p
 	font-size: 14px;
 	color: #fafafa;
 	font-weight: 400;
+	pointer-events: none !important;
 }
-
