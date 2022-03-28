@@ -1,4 +1,8 @@
 var Months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+ 
+// The Next Function is 
+// onenter (DisplayResult(BDate, BMonth, BYear))
+
 
 function AgeCalc()
 {
@@ -27,10 +31,9 @@ function AgeCalc()
 	)
 
 	{
-		var ErrorMessage = 'Not Born Yet / Esa fecha no ha transcurrido aún'
-		console.log(ErrorMessage);
-		alert (ErrorMessage)
-		DisplayResult("-", "-", "-");
+		var ErrorMessage = 'Not Born Yet'
+		console.log (ErrorMessage);
+		DisplayResult ("-", "-", "-");
 		return;
 	}
 
