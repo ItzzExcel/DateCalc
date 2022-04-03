@@ -1,8 +1,4 @@
 var Months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
- 
-// The Next Function is 
-// onenter (DisplayResult(BDate, BMonth, BYear))
-
 
 function AgeCalc()
 {
