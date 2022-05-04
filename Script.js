@@ -1,6 +1,6 @@
 var Months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-function AgeCalc()
+function DateCalc ()
 {
 	let Today = new Date();
 	let InputDate = new Date(document.getElementById('Input-Date').value);
