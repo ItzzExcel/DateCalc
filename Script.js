@@ -7,16 +7,16 @@ function DateCalc ()
 	let BirthMonth, BirthDate, BirthYear;
 
 	let BirthDetails = {
-		Date:InputDate.getDate(),
-		Month:InputDate.getMonth() + 1,
-		Year:InputDate.getFullYear()
+		Date:InputDate.getDate (),
+		Month:InputDate.getMonth () + 1,
+		Year:InputDate.getFullYear ()
 	}
 
-	let CurrentYear = Today.getFullYear();
-	let CurrentMonth = Today.getMonth() + 1;
-	let CurrentDate = Today.getDate();
+	let CurrentYear = Today.getFullYear ();
+	let CurrentMonth = Today.getMonth () + 1;
+	let CurrentDate = Today.getDate ();
 
-	LeapChecker(CurrentYear);
+	LeapChecker (CurrentYear);
 
 	if (
 
@@ -52,7 +52,7 @@ function DateCalc ()
 	else
 	{
 		BirthMonth --;
-		let Days = Months[CurrentMonth - 2];
+		let Days = Months [CurrentMonth - 2];
 		BirthDate = Days + CurrentDate - BirthDetails.Date;
 
 		if (BirthMonth < 0)
@@ -62,17 +62,17 @@ function DateCalc ()
 		}
 	}
 
-	DisplayResult(BirthDate, BirthMonth, BirthYear);
+	DisplayResult (BirthDate, BirthMonth, BirthYear);
 }
 
-function DisplayResult(BDate, BMonth, BYear)
+function DisplayResult (BDate, BMonth, BYear)
 {
-	document.getElementById('Years').textContent = BYear;
-	document.getElementById('Months').textContent = BMonth;
-	document.getElementById('Days').textContent = BDate;
+	document.getElementById ('Years').textContent = BYear;
+	document.getElementById ('Months').textContent = BMonth;
+	document.getElementById ('Days').textContent = BDate;
 }
 
-function LeapChecker(Year) 
+function LeapChecker (Year) 
 {
 	if (Year % 4 == 0 || (Year % 100 == 0 && Year % 400 == 0))
 	{
