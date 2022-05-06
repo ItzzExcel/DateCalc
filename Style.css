@@ -24,6 +24,16 @@
 	background: #545454;
 }
 
+::selection
+{
+	background: #102027;
+}
+
+::-moz-selection
+{
+	background: #102027;
+}
+
 body
 {
 	display: flex;
