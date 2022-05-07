@@ -2,8 +2,8 @@ var Months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 function DateCalc ()
 {
-	let Today = new Date();
-	let InputDate = new Date(document.getElementById('Input-Date').value);
+	let Today = new Date ();
+	let InputDate = new Date (document.getElementById ('Input-Date').value);
 	let BirthMonth, BirthDate, BirthYear;
 
 	let BirthDetails = {
@@ -29,7 +29,7 @@ function DateCalc ()
 	{
 		var ErrorMessage = 'Not Born Yet'
 		console.log (ErrorMessage);
-		DisplayResult ("-", "-", "-");
+		DisplayResult ('-', '-', '-');
 		return;
 	}
 
