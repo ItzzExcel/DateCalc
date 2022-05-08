@@ -12,7 +12,7 @@
 	<script src="Script.js" type="text/javascript"></script>
 	<script src="Modernize.js" type="text/javascript"></script>
 </head>
-<body>
+<body id = "Body">
 
 <div class = "Container">
 	<div class = "Input-Wrppr">
@@ -52,10 +52,19 @@
 </div>
 
 <script type="text/javascript">
-	let Input = document.getElementById('Input-Date');
+	let Input = document.getElementById ('Input-Date');
 
-	Input.addEventListener('keyup', (Inpt) => {
+	Input.addEventListener ('keyup', (Inpt) => {
 		if (Inpt.keyCode == 13)
+		{
+			DateCalc ();
+		}
+	})
+
+	let Body = document.getElementById ('Body');
+
+	Body.addEventListener ('keyup', (Input) => {
+		if (Input.keyCode == 13)
 		{
 			DateCalc ();
 		}
