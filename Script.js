@@ -72,7 +72,7 @@ function DisplayResult (BDate, BMonth, BYear)
 	document.getElementById ('Days').textContent = BDate;
 }
 
-function LeapChecker (Year) 
+function LeapChecker (Year)
 {
 	if (Year % 4 == 0 || (Year % 100 == 0 && Year % 400 == 0))
 	{
