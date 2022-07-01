@@ -7,9 +7,9 @@ function DateCalc ()
 	let BirthMonth, BirthDate, BirthYear;
 
 	let BirthDetails = {
-		Date:InputDate.getDate (),
-		Month:InputDate.getMonth () + 1,
-		Year:InputDate.getFullYear ()
+		Date : InputDate.getDate (),
+		Month : InputDate.getMonth () + 1,
+		Year : InputDate.getFullYear ()
 	}
 
 	let CurrentYear = Today.getFullYear ();
@@ -31,8 +31,8 @@ function DateCalc ()
 		console.log (ErrorMessage);
 		DisplayResult ('-', '-', '-');
 		return;
-	}
 
+	}
 	BirthYear = CurrentYear - BirthDetails.Year;
 
 	if (CurrentMonth >= BirthDetails.Month)
